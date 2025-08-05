@@ -1,0 +1,134 @@
+.about-container {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4e73df;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(78, 115, 223, 0.6);
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #4e73df;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.profile-info h3 {
+  margin-top: 8px;
+  color: #666;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.profile-info p {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  transition: opacity 0.4s ease;
+}
+
+section {
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+section h2 {
+  margin-bottom: 12px;
+  color: #f68b3e;
+  font-size: 22px;
+  border-bottom: 2px solid #f68b3e;
+  display: inline-block;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+ul {
+  font-size: 15px;
+  padding-left: 20px;
+  line-height: 1.8;
+  transition: all 0.3s ease;
+}
+
+ul li {
+  list-style: disc;
+}
+
+.education p {
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-info h1 {
+    font-size: 24px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 20px 10px;
+  }
+
+  .profile-info p,
+  ul,
+  .education p {
+    font-size: 14px;
+  }
+
+  section h2 {
+    font-size: 18px;
+  }
+}

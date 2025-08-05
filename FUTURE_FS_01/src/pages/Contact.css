@@ -1,0 +1,88 @@
+.contact-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f7f9fc, #e6ecf5);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  animation: fadeSlideIn 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-container h1 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.contact-container p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.contact-details a {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: #4e73df;
+}
+
+.icon {
+  font-size: 22px;
+  margin-right: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.email-icon { color: #d93025; }
+.whatsapp-icon { color: #25d366; }
+.linkedin-icon { color: #0077b5; }
+.github-icon { color: #333; }
+.huggingface-icon { color: #ffcc00;}
+
+.contact-details a:hover .icon {
+  transform: scale(1.2) rotate(3deg);
+}
+
+@media (max-width: 600px) {
+  .contact-details {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .contact-details a {
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .contact-container {
+    padding: 30px 15px;
+  }
+}
