@@ -29,7 +29,6 @@ Everything is styled with modern UI, smooth transitions, and is fully responsive
 
 ## 🌍 Hosted On
 
-- 🧠 [Hugging Face Spaces](https://huggingface.co/spaces/PriyaSinghlgtm)
 - 💻 [GitHub Repository](https://github.com/ps7607920-lgtm/FUTURE_FS_01)
 
 
